@@ -1,0 +1,24 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const NavigationBar = styled.div`
+  margin-bottom: 15px;
+  background-color: lightgray;
+`;
+
+const Navigation = () => {
+  // eslint-disable-next-line no-unused-expressions
+  return (
+    <NavigationBar>
+      <Link className="btn btn-primary" to="/">
+        To-Do List
+      </Link>
+      <Link className="btn btn-secondary" to="/new-item">
+        +Add New
+      </Link>
+    </NavigationBar>
+  );
+};
+
+export default Navigation;
